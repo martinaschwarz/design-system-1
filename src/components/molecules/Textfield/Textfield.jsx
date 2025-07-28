@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { InputContainer } from "./styles";
 
@@ -6,9 +6,15 @@ import Label from "../../atoms/Label/Label";
 import Input from "../../atoms/Input/Input";
 import ErrorMessage from "../../atoms/ErrorMessage/ErrorMessage";
 
-const Textfield = ({ id, type, label, placeholder, errorMsg }) => {
-  const [value, setValue] = useState("");
-
+const Textfield = ({
+  id,
+  type,
+  label,
+  value,
+  placeholder,
+  errorMsg,
+  onChange,
+}) => {
   return (
     <InputContainer>
       {label && <Label id={id} text={label} />}
@@ -18,8 +24,8 @@ const Textfield = ({ id, type, label, placeholder, errorMsg }) => {
         placeholder={placeholder}
         error={errorMsg}
         value={value}
-        onChange={(e) => setValue(e.target.value)}
         filled={value !== ""}
+        onChange={onChange}
       />
       {errorMsg && <ErrorMessage text={errorMsg} />}
     </InputContainer>
