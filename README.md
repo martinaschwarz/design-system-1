@@ -2,7 +2,7 @@
 
 A funky, bubbly little design system built for fun (and to flex a few creative muscles) - still a work in progress.
 
-[Link to designs in Figma](https://www.figma.com/design/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=0-1&t=XeHCOsiKlzTHMIwm-1)
+[Link to designs in Figma]([https://www.figma.com/design/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=0-1&t=XeHCOsiKlzTHMIwm-1](https://www.figma.com/proto/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=1-3&p=f&t=dCUviZEEPrjP5SbH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3))
 
 ## Screenshots
 
