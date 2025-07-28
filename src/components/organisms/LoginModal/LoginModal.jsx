@@ -14,8 +14,18 @@ const LoginModal = ({ ref }) => {
     <Modal ref={ref}>
       <StyledLogin>
         <Heading level={1} label="Login" />
-        <Textfield id="email" label="Email" placeholder="example@mail.com" />
-        <Textfield id="password" label="Password" placeholder="••••••" />
+        <Textfield
+          type="email"
+          id="email"
+          label="Email"
+          placeholder="example@mail.com"
+        />
+        <Textfield
+          type="password"
+          id="password"
+          label="Password"
+          placeholder="••••••"
+        />
         <div id="pw-options">
           <Checkbox label="Remember me?" />
           <TextButton id="pw-reset" label="Forgot password?" />

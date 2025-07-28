@@ -6,7 +6,7 @@ import Label from "../../atoms/Label/Label";
 import Input from "../../atoms/Input/Input";
 import ErrorMessage from "../../atoms/ErrorMessage/ErrorMessage";
 
-const Textfield = ({ id, label, placeholder, errorMsg }) => {
+const Textfield = ({ id, type, label, placeholder, errorMsg }) => {
   const [value, setValue] = useState("");
 
   return (
@@ -14,6 +14,7 @@ const Textfield = ({ id, label, placeholder, errorMsg }) => {
       {label && <Label id={id} text={label} />}
       <Input
         id={id}
+        type={type}
         placeholder={placeholder}
         error={errorMsg}
         value={value}
