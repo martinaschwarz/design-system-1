@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Design System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A funky, bubbly little design system built for fun (and to flex a few creative muscles) - still a work in progress.
+Design in Figma: https://www.figma.com/design/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=0-1&t=XeHCOsiKlzTHMIwm-1
+
+## Screenshots
+
+![Figma File](./src/assets/figma.png)
+![Usage Example](./src/assets/example.png)
+
+## Built With
+
+- React
+- Create React App
+- Styled Components
+- HTML / CSS / JavaScript
+- Figma
 
 ## Available Scripts
 
