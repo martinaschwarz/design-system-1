@@ -1,11 +1,15 @@
 # Design System
 
 A funky, bubbly little design system built for fun (and to flex a few creative muscles) - still a work in progress.
-Design in Figma: https://www.figma.com/design/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=0-1&t=XeHCOsiKlzTHMIwm-1
+
+Link to designs in Figma(https://www.figma.com/design/dfABnd4s7WcRmF2qGb6lfU/Design-System-1?node-id=0-1&t=XeHCOsiKlzTHMIwm-1)
 
 ## Screenshots
 
+Figma file:
 ![Figma File](./src/assets/figma.png)
+
+Example:
 ![Usage Example](./src/assets/example.png)
 
 ## Built With
