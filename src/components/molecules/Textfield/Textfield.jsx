@@ -24,7 +24,7 @@ const Textfield = ({
         placeholder={placeholder}
         error={errorMsg}
         value={value}
-        filled={value !== ""}
+        filled={value}
         onChange={onChange}
       />
       {errorMsg && <ErrorMessage text={errorMsg} />}
