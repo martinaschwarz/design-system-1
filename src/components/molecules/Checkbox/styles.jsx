@@ -18,19 +18,21 @@ export const CustomCheck = styled.span`
   color: white;
   width: 15px;
   height: 15px;
-  border: 1px solid #577b67;
-  background-color: ${({ checked }) => (checked ? "#577b67" : "white")};
+  border: ${({ theme }) => `1px solid ${theme.colors.primary.main}`};
+  background-color: ${({ checked, theme }) =>
+    checked ? theme.colors.primary.main : "white"};
   border-radius: 5px;
   margin-right: 7px;
 `;
 
 export const CustomLabel = styled.label`
   font-size: 12px;
-  font-weight: 500;
-  color: ${({ checked }) => (checked ? "#466252" : "#7e8189")};
+  font-weight: ${({ theme }) => theme.fontWeight.medium};
+  color: ${({ checked, theme }) =>
+    checked ? theme.colors.primary.darken1 : theme.colors.neutral.darken1};
   cursor: pointer;
 
   &:hover {
-    color: #466252;
+    color: ${({ theme }) => theme.colors.primary.darken1};
   }
 `;

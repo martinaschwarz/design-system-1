@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyledButton = styled.button`
   background: none;
-  border: 2px solid #577b67;
-  color: #466252;
+  border: ${({ theme }) => `2px solid ${theme.colors.primary.main}`};
+  color: ${({ theme }) => theme.colors.primary.darken1};
 
   &:hover {
-    background: #bccac2;
-    border: 2px solid #466252;
-    color: #344a3e;
+    background: ${({ theme }) => theme.colors.primary.lighten1};
+    border: ${({ theme }) => `2px solid ${theme.colors.primary.darken1}`};
+    color: ${({ theme }) => theme.colors.primary.darken2};
   }
 `;

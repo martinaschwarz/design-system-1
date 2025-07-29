@@ -4,21 +4,25 @@ export const StyledInput = styled.input`
   min-width: 300px;
   height: 34px;
   border-radius: 20px;
-  background: ${({ filled }) => (filled ? "white" : "#d8d9dd")};
-  border: ${({ filled, error }) => {
-    if (error) return "2px solid #F8484D";
-    if (filled) return "2px solid #9EA1AB";
-    return "2px solid #d8d9dd";
+  background: ${({ filled, theme }) =>
+    filled ? "white" : theme.colors.neutral.lighten3};
+  border: ${({ filled, error, theme }) => {
+    if (error) return `2px solid ${theme.colors.error.main}`;
+    if (filled) return `2px solid ${theme.colors.neutral.main}`;
+    return `2px solid ${theme.colors.neutral.lighten3}`;
   }};
-  color: ${({ filled }) => (filled ? "black" : "#5F6167")};
+  color: ${({ filled, theme }) =>
+    filled ? "black" : theme.colors.neutral.darken2};
   outline: none;
   padding-left: 20px;
-  font-family: "Inter";
+  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 14px;
 
   &:focus {
-    border: ${({ error }) =>
-      error ? "2px solid #F8484D" : "2px solid #577b67"};
+    border: ${({ error, theme }) =>
+      error
+        ? `2px solid ${theme.colors.error.main}`
+        : `2px solid ${theme.colors.primary.main}`};
     background: white;
   }
 `;

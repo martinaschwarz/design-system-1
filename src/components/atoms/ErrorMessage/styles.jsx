@@ -2,6 +2,6 @@ import styled from "styled-components";
 
 export const StyledMessage = styled.div`
   font-size: 11px;
-  font-weight: 500;
-  color: #c63a3e;
+  font-weight: ${({ theme }) => theme.fontWeight.medium};
+  color: ${({ theme }) => theme.colors.error.darken1};
 `;

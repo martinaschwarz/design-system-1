@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
+import Theme from "./Theme.js";
+
 import LoginModal from "./components/organisms/LoginModal/LoginModal";
 
 function App() {
@@ -12,7 +14,11 @@ function App() {
     loginRef.current.showModal();
   }, []);
 
-  return <LoginModal ref={loginRef} />;
+  return (
+    <Theme>
+      <LoginModal ref={loginRef} />
+    </Theme>
+  );
 }
 
 export default App;

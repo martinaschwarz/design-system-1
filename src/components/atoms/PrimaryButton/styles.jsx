@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  background: #577b67;
+  background: ${({ theme }) => theme.colors.primary.main};
   border: none;
   color: white;
 
   &:hover {
-    background: #466252;
+    background: ${({ theme }) => theme.colors.primary.darken1};
   }
 `;
