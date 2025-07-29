@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { StyledCheckbox, CustomCheck, CustomLabel } from "./styles";
 
 const Checkbox = ({ label }) => {
-  const [isChecked, setIsChecked] = useState();
+  const [isChecked, setIsChecked] = useState(false);
 
   const toggle = () => {
     setIsChecked((prev) => !prev);
