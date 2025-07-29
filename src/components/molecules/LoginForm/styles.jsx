@@ -17,7 +17,6 @@ export const StyledLogin = styled.div`
   }
 
   #pw-reset {
-    font-size: 12px;
     text-align: end;
     height: auto;
   }
